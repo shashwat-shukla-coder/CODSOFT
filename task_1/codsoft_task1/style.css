@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 55px
+}
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 0px 20px; 
+    }
+    nav ul li a {
+        font-size: 18px; 
+        padding: 10px 20px; 
+    }
+    .hero .left img {
+        margin-top: 50px; 
+        margin-left: 0px;
+        width: 100%;
+    }
+    .hero .right {
+        padding-top: 100px; 
+        font-size: 1.5rem; 
+    }
+}
+/* Media query for mobile screens */
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 0px 10px; 
+    }
+
+    nav ul li a {
+        font-size: 16px; 
+        padding: 10px 15px; 
+    }
+
+    .hero .left img {
+        margin-top: 30px; 
+    }
+
+    .hero .right {
+        padding-top: 80px;
+        font-size: 1.2rem; 
+    }
+}
+
+
+.mainlogo{
+text-transform: capitalize;
+font-size: 25px;
+font-weight: bold;
+letter-spacing: 1.5px;
+color: white;
+cursor: pointer;
+padding-bottom: 3px;
+float: left;
+}
+nav{
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    padding: 0px 100px;
+    background-color: black;
+    display: block;
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    padding: 10px 30px;
+    font-size: 21px;
+    text-decoration: none;
+    border-radius: 20%;
+}
+nav ul li a:hover{
+    color:black;
+    transition: all 0.8s ease 0s;
+    box-shadow: inset 100px 0 0 0 rgb(198, 198, 173);
+}
+main{
+    position: relative;
+    overflow: hidden;
+}
+.hero .left img{
+    float: left;
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 45%;
+    margin-right: 25px;
+    
+}
+.hero{
+padding-top: 100px;
+display: block;
+width: 100vw;
+height: 100vh;
+background-image: url(./milky-way-2695569_1280.jpg);
+background-size: cover;
+border-bottom: 15px solid black;
+}
+.hero .right{
+    padding-top: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem ;
+}
+.hero .right .bt{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-top: 160px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hero .right .bt:hover{
+    background-color: rgb(122, 186, 241);
+    color: black;
+    transition: all .8s ease 0s;
+    box-shadow: inset 100px 0 0 0 rgb(198, 198, 173);
+}
+.right .bt:active{
+    content: "";
+    scale: 0.9;
+}
+/* content starts here */
+
+#about{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #ad8686;
+    border: 5px solid black;
+    
+}
+#content #about{
+    color: black;
+    font-weight: bold;
+}
+.div1{
+    position: relative;
+    left: 0px;
+    height: 50%;
+    width: 50%
+
+}
+.div1 img{
+    width:50%;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+   
+}
+#about .tag{
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+#about > .one{
+    margin: 25px;
+    width: 50%;
+    position: absolute;
+    right: 10%;
+}
+#about > .one p{
+    padding: 5px;
+    font-size: 18px;
+}
+
+#skills{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(129, 102, 236);
+   
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 30px;
+    padding: 50px;
+    border: 5px solid black;
+}
+.tc{
+    padding-top: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size:  40px;
+}
+.skilltxt.card {
+    display: inline-block;
+    height: 100px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+  }
+
+.cardtitle {
+    display: inline-block;
+    text-align: center;
+}
+.cardtitle:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+.card:hover .servicesIcon {
+    display: inline-block;
+    color: #008000;
+    transition: all 1s 0;
+}
+.skilltxt:hover {
+    display: inline-block;
+    color: aqua;
+    background-color: black;
+    border: 1px solid #008000;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* project */
+#project{
+    display: flex;
+    
+    width: 100vw;
+    height: 100vh;
+}
+.item{
+    flex: 33%;
+    padding: 10px;
+   
+ }
+
+.item img{
+    width: 100%;
+    height: 50%;
+}
+.hidden p{
+    font-family: sans-serif;
+}
+.hidden{
+    display: none;
+}
+.item:hover .hidden{
+    display: block;
+    background-color: #00bfff;
+    color: black;
+    margin: 15px;
+    padding: 10px;
+}
+#taggy{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+.social-icons a{
+    font-size: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 30px;
+}
+.social-icons a:hover{
+    color: yellowgreen;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}

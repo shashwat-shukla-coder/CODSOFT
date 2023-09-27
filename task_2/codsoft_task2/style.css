@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+nav ul {
+    position:fixed;
+    background-color: #33302f;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding-top: 22px;
+    z-index: 1;
+    
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eede02;
+    font-weight: bold;
+    padding: 30px;
+    
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color: black;
+    border-radius: 5px;
+}
+nav ul li a::after{
+    scale: 0.9;
+    transition: all 0.5s ;
+}
+
+.landing-section {
+    background-image: url('./wood.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+.m{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.landing-section h1 {
+    
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.landing-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1;
+    margin: 10px;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
+.info-section {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 60vh;
+}
+.item img{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.fcontain{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.fcontain img{
+    width: 300px;
+    height: 300px;
+}   
+
+
+.info-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.info-section ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+#services{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-section {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    display: flex;
+    height: 75vh;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    
+}
+.contact-section .right{
+    justify-content:space-around;
+}
+.info-section cta-button{
+    margin-top: 25px;
+    padding: 30px;
+}
+
+
+.contact-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 40px;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button[type="submit"] {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contact-section button[type="submit"]:hover {
+    background-color: #e64a19;
+}
+
+.left-c{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+.mySlides {display: flex;}
+.mySlides img {vertical-align: middle;
+width: 550px;
+height: 400px;
+}
+
+
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+    <h1 class="center"><b>calculator using HTML , CSS , JS</b></h1>
+    <div class="full">
+        
+        <div class="buttongrid">
+            
+            <input class="btn span4" id="sc" name="sc" type="text">
+
+            <input type = "button" class="btn" value="1" onclick="sc.value += '1' " >
+
+            <input type = "button" class="btn" value="2" onclick="sc.value += '2' ">
+
+
+            <input type = "button" class="btn" value="3" onclick="sc.value += '3' ">
+
+            <input type = "button" class="btn" id="clearall" value="AC" onclick="sc.value = '' ">
+
+            <input type = "button" class="btn" id="clear1" value="C" onclick=" sc.value = sc.value.toString().slice(0,-1)">
+
+            <input type = "button" class="btn"  value="4" onclick="sc.value += '4' ">
+
+            <input type = "button" class="btn"  value="5" onclick="sc.value += '5' ">
+
+            <input type = "button" class="btn"  value="6" onclick="sc.value += '6' ">
+
+            <input type = "button" class="btn"  value="+" onclick="sc.value += '+' ">
+
+            <input type = "button" class="btn"  value="-" onclick="sc.value += '-' ">
+
+            <input type = "button" class="btn"  value="7" onclick="sc.value += '7' ">
+
+            <input type = "button" class="btn"  value="8" onclick="sc.value += '8' ">
+
+            <input type = "button" class="btn"  value="9" onclick="sc.value += '9' ">
+
+            <input type = "button" class="btn"  value="*" onclick="sc.value += '*' ">
+
+            <input type = "button" class="btn"  value="/" onclick="sc.value += '/' ">
+
+            <input type = "button" class="btn"  value="0" onclick="sc.value += '0' ">
+
+            <input type = "button" class="btn"  value="." onclick="sc.value += '.' ">
+
+            <input type = "button" class="btn"  value="^" onclick="sc.value += '**' ">
+
+            <input type = "button" class="btn span2" id="equal"  value="=" onclick="sc.value = eval(sc.value)">
+        </div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(106, 151, 191);
+    
+}
+.full{ 
+    padding: 10px 20px;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.buttongrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    height:500px;
+    width: 400px;
+}
+.buttongrid .btn{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 1px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: rgb(135, 151, 138);
+    box-shadow: inset 5px 5px gold;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+.buttongrid .span4{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    text-align: left;
+    background-color: rgb(49, 48, 48);
+    color: rgb(255, 255, 255);
+}
+.buttongrid .span2{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+.center{
+    text-align: center;
+    margin-top: 40px;
+    
+}
